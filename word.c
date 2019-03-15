@@ -10,6 +10,7 @@ Unit * unit(char * word){
     u->inc = inc;
     u->print = unit_print;
     u->get = unit_get;
+    u->destroy_unit = destroy_unit;
     return u;
 }
 
@@ -28,5 +29,5 @@ void destroy_unit(Unit * u){
 }
 
 void unit_print(Unit * u){
-    printf("%s %d times found in the text\n", u->w, u->num);
+    printf("%s %d \n", u->w, u->num);
 }

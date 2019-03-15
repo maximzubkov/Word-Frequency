@@ -18,7 +18,7 @@ Dict * dict(Reader * r){
 void add(Dict * d, char * text){
     char * str;
     int j = 0, flag = 0;
-    str = strtok(text, " ");
+    str = strtok(text, " ,.!\n\t:");
     d->words[d->size] = unit(str);
     d->size++;
     while (1)

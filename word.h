@@ -7,6 +7,7 @@ typedef struct Unit{
 	void (* inc)(struct Unit * u);
 	char * (* get)(struct Unit * u);
 	void (* print)(struct Unit * u);
+	void (* destroy_unit)(struct Unit * u);
 } Unit;
 
 Unit * unit(char * word);
